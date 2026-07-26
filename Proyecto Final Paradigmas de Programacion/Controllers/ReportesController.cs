@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Proyecto_Final_Paradigmas_de_Programacion.Models;
 using Proyecto_Final_Paradigmas_de_Programacion.Repositories;
+using Proyecto_Final_Paradigmas_de_Programacion.Filters;
 
 namespace Proyecto_Final_Paradigmas_de_Programacion.Controllers
 {
+    [SesionActiva]
     public class ReportesController : Controller
     {
         private readonly ReporteRepository reporteRepository;
@@ -21,8 +23,41 @@ namespace Proyecto_Final_Paradigmas_de_Programacion.Controllers
             return View(reportes);
         }
 
+        public IActionResult MisReportes()
+        {
+            var idUsuario = HttpContext.Session.GetInt32("IdUsuario");
 
-        
+
+            if (idUsuario == null)
+            {
+                return RedirectToAction(
+                    "Login",
+                    "Usuarios"
+                );
+            }
+
+
+            var reportes =
+                reporteRepository.ObtenerReportesPorUsuario(
+                    idUsuario.Value
+                );
+
+
+            return View(reportes);
+        }
+
+
+
+        // Mostrar formulario para crear
+        public IActionResult Crear()
+        {
+            ViewBag.Modo = "Crear";
+
+            return View("Formulario", new Reporte());
+        }
+
+
+
 
         // Guardar reporte
         [HttpPost]
@@ -51,11 +86,23 @@ namespace Proyecto_Final_Paradigmas_de_Programacion.Controllers
             // en caso de crear
             if (reporte.IdReporte == 0)
             {
-                reporte.IdUsuario = 2;
+                var idUsuario = HttpContext.Session.GetInt32("IdUsuario");
+
+
+                if (idUsuario == null)
+                {
+                    return RedirectToAction(
+                        "Login",
+                        "Usuarios"
+                    );
+                }
+
+
+                reporte.IdUsuario = idUsuario.Value;
+
 
                 reporteRepository.CrearReporte(reporte);
             }
-
 
             // en caso de editar
             else
@@ -85,6 +132,15 @@ namespace Proyecto_Final_Paradigmas_de_Programacion.Controllers
 
 
             return View("Formulario", reporte);
+        }
+
+        //eliminar
+
+        public IActionResult Eliminar(int id)
+        {
+            reporteRepository.EliminarReporte(id);
+
+            return RedirectToAction("Index");
         }
 
 

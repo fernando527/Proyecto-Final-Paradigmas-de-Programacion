@@ -1,0 +1,116 @@
+﻿@model Proyecto_Final_Paradigmas_de_Programacion.Models.Reporte
+
+
+<div class="container mt-4">
+
+    <h2>
+        Cambiar Estado del Reporte
+    </h2>
+
+
+    <hr>
+
+
+    <p>
+        <strong>ID Reporte:</strong>
+        @Model.IdReporte
+    </p>
+
+
+    <p>
+        <strong>Usuario:</strong>
+        @Model.NombreUsuario
+    </p>
+
+
+    <p>
+        <strong>Descripción:</strong>
+        @Model.Descripcion
+    </p>
+
+
+
+    <form asp-action="GuardarEstado" method="post">
+
+
+        <input type="hidden"
+               asp-for="IdReporte" />
+
+
+        <label class="form-label">
+            Estado
+        </label>
+
+
+        <select name="IdEstado" class="form-control">
+
+            @if (Model.IdEstado == 1)
+            {
+                <option value="1" selected>
+                    Pendiente
+                </option>
+            }
+            else
+            {
+                <option value="1">
+                    Pendiente
+                </option>
+            }
+
+
+            @if (Model.IdEstado == 2)
+            {
+                <option value="2" selected>
+                    En revisión
+                </option>
+            }
+            else
+            {
+                <option value="2">
+                    En revisión
+                </option>
+            }
+
+
+            @if (Model.IdEstado == 3)
+            {
+                <option value="3" selected>
+                    En proceso
+                </option>
+            }
+            else
+            {
+                <option value="3">
+                    En proceso
+                </option>
+            }
+
+
+            @if (Model.IdEstado == 4)
+            {
+                <option value="4" selected>
+                    Reparado
+                </option>
+            }
+            else
+            {
+                <option value="4">
+                    Reparado
+                </option>
+            }
+
+        </select>
+
+
+        <button type="submit"
+                class="btn btn-success mt-3">
+
+            Guardar Estado
+
+        </button>
+
+
+    </form>
+
+
+</div>

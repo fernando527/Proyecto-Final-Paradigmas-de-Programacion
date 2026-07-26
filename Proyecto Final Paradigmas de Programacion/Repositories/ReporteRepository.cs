@@ -12,7 +12,7 @@ namespace Proyecto_Final_Paradigmas_de_Programacion.Repositories
         {
             conexion = new ConexionDB();
         }
-        //aqui esta el read
+        //aqui esta el read (optener reportes para admin)
         public List<Reporte> ObtenerReportes()
         {
             using var con = conexion.ObtenerConexion();
@@ -48,6 +48,56 @@ namespace Proyecto_Final_Paradigmas_de_Programacion.Repositories
             return con.Query<Reporte>(sql).ToList();
         }
 
+        public List<Reporte> ObtenerReportesPorUsuario(int idUsuario)
+        {
+            using var con = conexion.ObtenerConexion();
+
+
+            string sql = @"
+                 SELECT
+                 R.IdReporte,
+                 R.IdUsuario,
+                 U.Nombre AS NombreUsuario,
+                 R.Edificio,
+                 R.Aula,
+                 R.IdTipoDanio,
+                 T.Nombre AS NombreDanio,
+                 R.Descripcion,
+                 R.IdPrioridad,
+                 P.Nombre AS NombrePrioridad,
+                 R.IdEstado,
+                 E.Nombre AS NombreEstado,
+                 R.FechaReporte,
+                 R.EsUrgente,
+                 R.Imagen
+                   FROM Reportes R
+
+              INNER JOIN Usuarios U
+                  ON R.IdUsuario = U.IdUsuario
+
+              INNER JOIN TiposDanio T
+                  ON R.IdTipoDanio = T.IdTipoDanio
+
+              INNER JOIN Prioridades P
+                  ON R.IdPrioridad = P.IdPrioridad
+
+              INNER JOIN Estados E
+                  ON R.IdEstado = E.IdEstado
+
+              WHERE R.IdUsuario = @IdUsuario
+
+              ORDER BY R.FechaReporte DESC";
+
+
+            return con.Query<Reporte>(
+                sql,
+                new
+                {
+                    IdUsuario = idUsuario
+                }
+            ).ToList();
+        }
+
         //aqui esta el create
         public void CrearReporte(Reporte reporte)
         {
@@ -77,16 +127,31 @@ namespace Proyecto_Final_Paradigmas_de_Programacion.Repositories
 
         //aqui esta el edit
 
-        public Reporte? ObtenerReportePorId(int id)
+        public Reporte ObtenerReportePorId(int id)
         {
             using var con = conexion.ObtenerConexion();
 
-            string sql = @"
-        SELECT *
-        FROM Reportes
-        WHERE IdReporte = @Id";
 
-            return con.QueryFirstOrDefault<Reporte>(sql, new { Id = id });
+            string sql = @"
+               SELECT 
+                   r.*,
+                   u.Nombre AS NombreUsuario,
+                   e.Nombre AS NombreEstado
+               FROM Reportes r
+
+               INNER JOIN Usuarios u
+                   ON r.IdUsuario = u.IdUsuario
+
+               INNER JOIN Estados e
+                   ON r.IdEstado = e.IdEstado
+
+               WHERE r.IdReporte = @Id";
+
+
+            return con.QueryFirstOrDefault<Reporte>(
+                sql,
+                new { Id = id }
+            );
         }
 
         public void ActualizarReporte(Reporte reporte)
@@ -94,18 +159,52 @@ namespace Proyecto_Final_Paradigmas_de_Programacion.Repositories
             using var con = conexion.ObtenerConexion();
 
             string sql = @"
-        UPDATE Reportes
-        SET
+            UPDATE Reportes
+             SET
             Edificio = @Edificio,
             Aula = @Aula,
             IdTipoDanio = @IdTipoDanio,
             Descripcion = @Descripcion,
             IdPrioridad = @IdPrioridad,
             EsUrgente = @EsUrgente
-        WHERE IdReporte = @IdReporte";
+             WHERE IdReporte = @IdReporte";
 
             con.Execute(sql, reporte);
         }
+
+        //eliminar
+
+        public void EliminarReporte(int id)
+        {
+            using var con = conexion.ObtenerConexion();
+
+            string sql = @"DELETE FROM Reportes
+                   WHERE IdReporte = @Id";
+
+            con.Execute(sql, new { Id = id });
+        }
+
+        //editar estado
+
+        public void ActualizarEstadoReporte(int idReporte, int idEstado)
+        {
+            using var con = conexion.ObtenerConexion();
+
+
+            string sql = @"
+        UPDATE Reportes
+        SET IdEstado = @IdEstado
+        WHERE IdReporte = @IdReporte";
+
+
+            con.Execute(sql, new
+            {
+                IdReporte = idReporte,
+                IdEstado = idEstado
+            });
+        }
+
+
 
     }
 }

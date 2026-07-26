@@ -13,10 +13,15 @@ namespace Proyecto_Final_Paradigmas_de_Programacion.Controllers
         {
             return View();
         }
+        public IActionResult AcercaDelSistema()
+        {
+            return View();
+        }
 
- 
 
-        
+
+
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

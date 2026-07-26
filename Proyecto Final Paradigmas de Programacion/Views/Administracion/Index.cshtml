@@ -1,0 +1,61 @@
+﻿@model List<Proyecto_Final_Paradigmas_de_Programacion.Models.Reporte>
+
+<h2>Administración de Reportes</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Usuario</th>
+            <th>Estado</th>
+            <th>Acción</th>
+        </tr>
+    </thead>
+
+
+
+    <tbody>
+        @{
+            int contador = 1;
+        }
+
+        <tbody>
+
+            @foreach (var reporte in Model)
+            {
+                <tr>
+
+                    <td>
+                        @reporte.IdReporte
+                    </td>
+
+
+                    <td>
+                        @reporte.NombreUsuario
+                    </td>
+
+
+                    <td>
+                        @reporte.NombreEstado
+                    </td>
+
+
+                    <td>
+
+                        <a asp-controller="Administracion"
+                               asp-action="CambiarEstado"
+                               asp-route-id="@reporte.IdReporte"
+                               class="btn btn-primary">
+
+                            Cambiar Estado
+
+                        </a>
+
+                    </td>
+
+                </tr>
+            }
+
+        </tbody>
+
+</table>
