@@ -1,7 +1,15 @@
 ﻿@model Proyecto_Final_Paradigmas_de_Programacion.Models.Reporte
 
-<h2>Registrar Daño</h2>
-
+<h2>
+    @if (ViewBag.Modo == "Crear")
+    {
+        <text>Registrar Daño</text>
+    }
+    else
+    {
+        <text>Editar Reporte</text>
+    }
+</h2>
 
 @if (ViewBag.Error != null)
 {
@@ -11,8 +19,8 @@
 }
 
 
-<form asp-action="Crear" method="post">
-
+<form asp-action="Guardar" method="post">
+    <input type="hidden" asp-for="IdReporte" />
 
     <div class="mb-3">
         <label class="form-label">Edificio</label>
@@ -200,7 +208,14 @@
             <button type="submit"
                     class="btn btn-primary">
 
-                Guardar Reporte
+                @if (ViewBag.Modo == "Crear")
+                {
+                    <text>Guardar Reporte</text>
+                }
+                else
+                {
+                    <text>Guardar Cambios</text>
+                }
 
             </button>
 
@@ -213,19 +228,19 @@
 
             const edificios = {
 
-            "Edificio 1": [12,12,12,12],
+                "Edificio 1": [12,12,12,12],
 
-            "Edificio 2": [12,12,12,12],
+                "Edificio 2": [12,12,12,12],
 
-            "Edificio 3": [4,3,4],
+                "Edificio 3": [4,4,3],
 
-            "Edificio 4": [12,12,12,12],
+                "Edificio 4": [12,12,12,12],
 
-            "Edificio 5": [12,12,12,12],
+                "Edificio 5": [12,12,12,12],
 
-            "Edificio 6": [12,12,12,12],
+                "Edificio 6": [12,12,12,12],
 
-            "Anexos": [24]
+                "Anexos": [24]
 
             };
 
@@ -253,7 +268,6 @@
 
 
 
-
                 for(let i = 1; i <= pisos; i++)
                 {
 
@@ -278,26 +292,27 @@
 
 
                 aulaSelect.innerHTML =
-                '<option value="">Seleccione un aula</option>';
+                    '<option value="">Seleccione un aula</option>';
 
 
 
                 let piso = this.value;
 
 
-                            let edificioActual = edificioSelect.value;
+                let edificioActual = edificioSelect.value;
 
-            let cantidad;
+                let cantidad;
 
 
-            if(edificioActual == "Anexos")
-            {
-                cantidad = 24;
-            }
-            else
-            {
-                cantidad = edificios[edificioActual][piso - 1];
-            }
+
+                if(edificioActual == "Anexos")
+                {
+                    cantidad = 24;
+                }
+                else
+                {
+                    cantidad = edificios[edificioActual][piso - 1];
+                }
 
 
 
@@ -335,6 +350,60 @@
 
 
             });
+
+
+
+            // Cargar automáticamente piso y aula al editar
+
+            window.onload = function(){
+
+
+                if(edificioSelect.value != "")
+                {
+
+                    edificioSelect.dispatchEvent(new Event('change'));
+
+                }
+
+
+
+                if("@Model.Aula" != "")
+                {
+
+                    setTimeout(function(){
+
+
+                        let aulaGuardada = "@Model.Aula";
+
+
+                        let numeroPiso = aulaGuardada.charAt(0);
+
+
+
+                        pisoSelect.value = numeroPiso;
+
+
+                        pisoSelect.dispatchEvent(new Event('change'));
+
+
+
+                        setTimeout(function(){
+
+
+                            aulaSelect.value = aulaGuardada;
+
+
+                        },100);
+
+
+
+                    },100);
+
+
+                }
+
+
+            };
 
 
         </script>

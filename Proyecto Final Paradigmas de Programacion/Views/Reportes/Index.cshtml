@@ -15,6 +15,7 @@
             <th>Estado</th>
             <th>Fecha</th>
             <th>Urgente</th>
+            <th>Acciones</th>
         </tr>
     </thead>
 
@@ -43,6 +44,19 @@
 
                 <td>
                     @(reporte.EsUrgente ? "Sí" : "No")
+                </td>
+
+                <td>
+
+                    <a asp-controller="Reportes"
+                           asp-action="EditarFormulario"
+                           asp-route-id="@reporte.IdReporte"
+                           class="btn btn-warning">
+
+                        Editar
+
+                    </a>
+
                 </td>
             </tr>
         }

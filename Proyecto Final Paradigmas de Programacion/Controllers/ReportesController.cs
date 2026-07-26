@@ -22,16 +22,11 @@ namespace Proyecto_Final_Paradigmas_de_Programacion.Controllers
         }
 
 
-        // Mostrar formulario
-        public IActionResult Crear()
-        {
-            return View();
-        }
-
+        
 
         // Guardar reporte
         [HttpPost]
-        public IActionResult Crear(Reporte reporte)
+        public IActionResult Guardar(Reporte reporte)
         {
 
             if (string.IsNullOrWhiteSpace(reporte.Edificio) ||
@@ -41,16 +36,57 @@ namespace Proyecto_Final_Paradigmas_de_Programacion.Controllers
                reporte.IdPrioridad == 0)
             {
                 ViewBag.Error = "Todos los campos son obligatorios";
-                return View(reporte);
+
+                if (reporte.IdReporte == 0)
+                    ViewBag.Modo = "Crear";
+                else
+                    ViewBag.Modo = "Editar";
+
+
+                return View("Formulario", reporte);
             }
 
 
-            reporte.IdUsuario = 2;
 
-            reporteRepository.CrearReporte(reporte);
+            // en caso de crear
+            if (reporte.IdReporte == 0)
+            {
+                reporte.IdUsuario = 2;
+
+                reporteRepository.CrearReporte(reporte);
+            }
+
+
+            // en caso de editar
+            else
+            {
+                reporteRepository.ActualizarReporte(reporte);
+            }
+
 
 
             return RedirectToAction("Index");
         }
+
+
+        //editar formulario
+        public IActionResult EditarFormulario(int id)
+        {
+            var reporte = reporteRepository.ObtenerReportePorId(id);
+
+
+            if (reporte == null)
+            {
+                return NotFound();
+            }
+
+
+            ViewBag.Modo = "Editar";
+
+
+            return View("Formulario", reporte);
+        }
+
+
     }
 }

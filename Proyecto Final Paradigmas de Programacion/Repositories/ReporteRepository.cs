@@ -75,7 +75,37 @@ namespace Proyecto_Final_Paradigmas_de_Programacion.Repositories
             con.Execute(sql, reporte);
         }
 
-        //siguiente
+        //aqui esta el edit
+
+        public Reporte? ObtenerReportePorId(int id)
+        {
+            using var con = conexion.ObtenerConexion();
+
+            string sql = @"
+        SELECT *
+        FROM Reportes
+        WHERE IdReporte = @Id";
+
+            return con.QueryFirstOrDefault<Reporte>(sql, new { Id = id });
+        }
+
+        public void ActualizarReporte(Reporte reporte)
+        {
+            using var con = conexion.ObtenerConexion();
+
+            string sql = @"
+        UPDATE Reportes
+        SET
+            Edificio = @Edificio,
+            Aula = @Aula,
+            IdTipoDanio = @IdTipoDanio,
+            Descripcion = @Descripcion,
+            IdPrioridad = @IdPrioridad,
+            EsUrgente = @EsUrgente
+        WHERE IdReporte = @IdReporte";
+
+            con.Execute(sql, reporte);
+        }
 
     }
 }
