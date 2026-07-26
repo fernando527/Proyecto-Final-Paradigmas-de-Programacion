@@ -1,0 +1,340 @@
+﻿@model Proyecto_Final_Paradigmas_de_Programacion.Models.Reporte
+
+<h2>Registrar Daño</h2>
+
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.Error
+    </div>
+}
+
+
+<form asp-action="Crear" method="post">
+
+
+    <div class="mb-3">
+        <label class="form-label">Edificio</label>
+
+        <select id="edificio"
+                asp-for="Edificio"
+                class="form-control">
+
+            <option value="">Seleccione un edificio</option>
+
+            <option value="Edificio 1">Edificio 1</option>
+            <option value="Edificio 2">Edificio 2</option>
+            <option value="Edificio 3">Edificio 3</option>
+            <option value="Edificio 4">Edificio 4</option>
+            <option value="Edificio 5">Edificio 5</option>
+            <option value="Edificio 6">Edificio 6</option>
+            <option value="Anexos">Anexos</option>
+
+        </select>
+
+    </div>
+
+
+
+    <div class="mb-3">
+
+        <label class="form-label">Piso</label>
+
+        <select id="piso" class="form-control">
+
+            <option value="">
+                Seleccione un piso
+            </option>
+
+        </select>
+
+    </div>
+
+
+
+    <div class="mb-3">
+
+        <label class="form-label">Aula</label>
+
+        <select id="aula"
+                asp-for="Aula"
+                class="form-control">
+
+            <option value="">
+                Seleccione un aula
+            </option>
+
+        </select>
+
+    </div>
+
+
+
+    <div class="mb-3">
+
+        <label class="form-label">
+            Tipo de daño
+        </label>
+
+        <select asp-for="IdTipoDanio"
+                class="form-control">
+
+            <option value="0">
+                Seleccione un daño
+            </option>
+
+            <option value="1">
+                Proyector
+            </option>
+
+            <option value="2">
+                Aire acondicionado
+            </option>
+
+            <option value="3">
+                Escritorio
+            </option>
+
+            <option value="4">
+                Silla
+            </option>
+
+            <option value="5">
+                Luz
+            </option>
+
+            <option value="6">
+                Ventilador
+            </option>
+
+            <option value="7">
+                Pizarra
+            </option>
+
+            <option value="8">
+                Puerta
+            </option>
+
+            <option value="9">
+                Ventana
+            </option>
+
+            <option value="10">
+                Tomacorriente
+            </option>
+
+            <option value="11">
+                Internet
+            </option>
+
+            <option value="12">
+                Otro
+            </option>
+
+        </select>
+
+    </div>
+
+
+
+    <div class="mb-3">
+
+        <label>
+            Descripción
+        </label>
+
+        <textarea asp-for="Descripcion"
+                      class="form-control">
+        </textarea>
+
+        </div>
+
+
+
+        <div class="mb-3">
+
+            <label>
+                Prioridad
+            </label>
+
+
+            <select asp-for="IdPrioridad"
+                    class="form-control">
+
+
+                <option value="0">
+                    Seleccione prioridad
+                </option>
+
+                <option value="1">
+                    Baja
+                </option>
+
+                <option value="2">
+                    Media
+                </option>
+
+                <option value="3">
+                    Alta
+                </option>
+
+
+            </select>
+
+        </div>
+
+
+
+        <div class="mb-3">
+
+            <input asp-for="EsUrgente">
+
+                <label>
+                    Es urgente
+                </label>
+
+            </div>
+
+
+            <button type="submit"
+                    class="btn btn-primary">
+
+                Guardar Reporte
+
+            </button>
+
+
+        </form>
+
+       
+
+        <script>
+
+            const edificios = {
+
+            "Edificio 1": [12,12,12,12],
+
+            "Edificio 2": [12,12,12,12],
+
+            "Edificio 3": [4,3,4],
+
+            "Edificio 4": [12,12,12,12],
+
+            "Edificio 5": [12,12,12,12],
+
+            "Edificio 6": [12,12,12,12],
+
+            "Anexos": [24]
+
+            };
+
+
+
+            const edificioSelect = document.getElementById("edificio");
+            const pisoSelect = document.getElementById("piso");
+            const aulaSelect = document.getElementById("aula");
+
+
+
+            edificioSelect.addEventListener("change", function(){
+
+
+                pisoSelect.innerHTML =
+                    '<option value="">Seleccione un piso</option>';
+
+
+                aulaSelect.innerHTML =
+                    '<option value="">Seleccione un aula</option>';
+
+
+
+                let pisos = edificios[this.value].length;
+
+
+
+
+                for(let i = 1; i <= pisos; i++)
+                {
+
+                    let opcion = document.createElement("option");
+
+                    opcion.value = i;
+
+                    opcion.text =
+                        "Piso " + i;
+
+
+                    pisoSelect.appendChild(opcion);
+
+                }
+
+
+            });
+
+
+
+            pisoSelect.addEventListener("change", function(){
+
+
+                aulaSelect.innerHTML =
+                '<option value="">Seleccione un aula</option>';
+
+
+
+                let piso = this.value;
+
+
+                            let edificioActual = edificioSelect.value;
+
+            let cantidad;
+
+
+            if(edificioActual == "Anexos")
+            {
+                cantidad = 24;
+            }
+            else
+            {
+                cantidad = edificios[edificioActual][piso - 1];
+            }
+
+
+
+                for(let i = 1; i <= cantidad; i++)
+                {
+
+                    let numero;
+
+
+                    if(edificioSelect.value == "Anexos")
+                    {
+                        numero = i;
+                    }
+                    else
+                    {
+                        numero =
+                        piso +
+                        i.toString().padStart(2,'0');
+                    }
+
+
+
+                    let opcion =
+                    document.createElement("option");
+
+
+                    opcion.value = numero;
+
+                    opcion.text = numero;
+
+
+                    aulaSelect.appendChild(opcion);
+
+                }
+
+
+            });
+
+
+        </script>
