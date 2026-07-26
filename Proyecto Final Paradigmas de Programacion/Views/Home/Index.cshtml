@@ -1,9 +1,111 @@
 ﻿@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div class="container mt-5">
+
+    <div class="text-center">
+
+        <h1 class="display-4 fw-bold text-primary">
+            Sistema de Reporte de Daños en Aulas
+        </h1>
+
+        <h3 class="text-secondary">
+            UNAH Valle de Sula
+        </h3>
+
+        <hr />
+
+        <p class="lead">
+            Este sistema permite registrar y dar seguimiento a los daños
+            reportados en las aulas de la UNAH-VS, facilitando la comunicación
+            entre los usuarios y el personal encargado del mantenimiento.
+        </p>
+
+    </div>
+
+    <div class="row mt-5">
+
+        <div class="col-md-4 mb-3">
+
+            <div class="card shadow">
+
+                <div class="card-body text-center">
+
+                    <h4>Registrar Reporte</h4>
+
+                    <p>
+                        Registrar un nuevo daño detectado en un aula.
+                    </p>
+
+                    <a asp-controller="Reportes"
+                       asp-action="Crear"
+                       class="btn btn-primary">
+
+                        Registrar
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4 mb-3">
+
+            <div class="card shadow">
+
+                <div class="card-body text-center">
+
+                    <h4>Ver Reportes</h4>
+
+                    <p>
+                        Consultar los reportes registrados.
+                    </p>
+
+                    <a asp-controller="Reportes"
+                       asp-action="Index"
+                       class="btn btn-success">
+
+                        Ver Reportes
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4 mb-3">
+
+            <div class="card shadow">
+
+                <div class="card-body text-center">
+
+                    <h4>Investigación</h4>
+
+                    <p>
+                        Información sobre el problema y la solución propuesta.
+                    </p>
+
+                    <a class="btn btn-warning">
+
+                        Ver Investigación
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1>@ViewBag.Mensaje</h1>
-    <h2> Hola Buenas tardes </h2>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>

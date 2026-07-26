@@ -5,35 +5,18 @@ using System.Diagnostics;
 
 namespace Proyecto_Final_Paradigmas_de_Programacion.Controllers
 {
+    
+    
     public class HomeController : Controller
     {
         public IActionResult Index()
         {
-            ConexionDB conexion = new ConexionDB();
-
-            try
-            {
-                using (var con = conexion.ObtenerConexion())
-                {
-                    con.Open();
-                }
-
-                ViewBag.Mensaje = "Conexión exitosa con la base de datos";
-            }
-            catch (Exception ex)
-            {
-                ViewBag.Mensaje = ex.Message;
-            }
-
-
             return View();
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
+ 
 
+        
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
