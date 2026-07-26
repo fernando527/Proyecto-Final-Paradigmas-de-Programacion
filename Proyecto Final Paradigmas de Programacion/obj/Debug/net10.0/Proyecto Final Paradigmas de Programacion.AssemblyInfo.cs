@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Proyecto Final Paradigmas de Programacion")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c873321dda0fbf04cdd26d9efb073dbe68c70237")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2409c5c002fe68b997498c605e1a4bf77c461423")]
 [assembly: System.Reflection.AssemblyProductAttribute("Proyecto Final Paradigmas de Programacion")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Proyecto Final Paradigmas de Programacion")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

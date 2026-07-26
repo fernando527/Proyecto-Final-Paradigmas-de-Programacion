@@ -1,0 +1,52 @@
+﻿@model List<Proyecto_Final_Paradigmas_de_Programacion.Models.Reporte>
+
+<h2>Lista de Reportes</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Usuario</th>
+            <th>Edificio</th>
+            <th>Aula</th>
+            <th>Daño</th>
+            <th>Descripción</th>
+            <th>Prioridad</th>
+            <th>Estado</th>
+            <th>Fecha</th>
+            <th>Urgente</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var reporte in Model)
+        {
+            <tr>
+                <td>@reporte.IdReporte</td>
+
+                <td>@reporte.NombreUsuario</td>
+
+                <td>@reporte.Edificio</td>
+
+                <td>@reporte.Aula</td>
+
+                <td>@reporte.NombreDanio</td>
+
+                <td>@reporte.Descripcion</td>
+
+                <td>@reporte.NombrePrioridad</td>
+
+                <td>@reporte.NombreEstado</td>
+
+                <td>@reporte.FechaReporte</td>
+
+                <td>
+                    @(reporte.EsUrgente ? "Sí" : "No")
+                </td>
+            </tr>
+        }
+
+    </tbody>
+
+</table>

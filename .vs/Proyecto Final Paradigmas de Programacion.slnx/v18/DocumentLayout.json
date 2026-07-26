@@ -3,16 +3,76 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|c:\\users\\user\\desktop\\proyecto-final-paradigmas-de-programacion\\proyecto final paradigmas de programacion\\repositories\\reporterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|solutionrelative:proyecto final paradigmas de programacion\\repositories\\reporterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|c:\\users\\user\\desktop\\proyecto-final-paradigmas-de-programacion\\proyecto final paradigmas de programacion\\views\\reportes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|solutionrelative:proyecto final paradigmas de programacion\\views\\reportes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|c:\\users\\user\\desktop\\proyecto-final-paradigmas-de-programacion\\proyecto final paradigmas de programacion\\controllers\\reportescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|solutionrelative:proyecto final paradigmas de programacion\\controllers\\reportescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|c:\\users\\user\\desktop\\proyecto-final-paradigmas-de-programacion\\proyecto final paradigmas de programacion\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|solutionrelative:proyecto final paradigmas de programacion\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|c:\\users\\user\\desktop\\proyecto-final-paradigmas-de-programacion\\proyecto final paradigmas de programacion\\models\\reporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|solutionrelative:proyecto final paradigmas de programacion\\models\\reporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|c:\\users\\user\\desktop\\proyecto-final-paradigmas-de-programacion\\proyecto final paradigmas de programacion\\models\\prioridad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|solutionrelative:proyecto final paradigmas de programacion\\models\\prioridad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|c:\\users\\user\\desktop\\proyecto-final-paradigmas-de-programacion\\proyecto final paradigmas de programacion\\models\\estado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|solutionrelative:proyecto final paradigmas de programacion\\models\\estado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|c:\\users\\user\\desktop\\proyecto-final-paradigmas-de-programacion\\proyecto final paradigmas de programacion\\models\\tipodanio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|solutionrelative:proyecto final paradigmas de programacion\\models\\tipodanio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|c:\\users\\user\\desktop\\proyecto-final-paradigmas-de-programacion\\proyecto final paradigmas de programacion\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|solutionrelative:proyecto final paradigmas de programacion\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|c:\\users\\user\\desktop\\proyecto-final-paradigmas-de-programacion\\proyecto final paradigmas de programacion\\data\\conexiondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|solutionrelative:proyecto final paradigmas de programacion\\data\\conexiondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|c:\\users\\user\\desktop\\proyecto-final-paradigmas-de-programacion\\proyecto final paradigmas de programacion\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|solutionrelative:proyecto final paradigmas de programacion\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|c:\\users\\user\\desktop\\proyecto-final-paradigmas-de-programacion\\proyecto final paradigmas de programacion\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|solutionrelative:proyecto final paradigmas de programacion\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|c:\\users\\user\\desktop\\proyecto-final-paradigmas-de-programacion\\proyecto final paradigmas de programacion\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|solutionrelative:proyecto final paradigmas de programacion\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|c:\\users\\user\\desktop\\proyecto-final-paradigmas-de-programacion\\proyecto final paradigmas de programacion\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|solutionrelative:proyecto final paradigmas de programacion\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|c:\\users\\user\\desktop\\proyecto-final-paradigmas-de-programacion\\proyecto final paradigmas de programacion\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|solutionrelative:proyecto final paradigmas de programacion\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|c:\\users\\user\\desktop\\proyecto-final-paradigmas-de-programacion\\proyecto final paradigmas de programacion\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|solutionrelative:proyecto final paradigmas de programacion\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|c:\\users\\user\\desktop\\proyecto-final-paradigmas-de-programacion\\proyecto final paradigmas de programacion\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|solutionrelative:proyecto final paradigmas de programacion\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|c:\\users\\user\\desktop\\proyecto-final-paradigmas-de-programacion\\proyecto final paradigmas de programacion\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|solutionrelative:proyecto final paradigmas de programacion\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|c:\\users\\user\\desktop\\proyecto-final-paradigmas-de-programacion\\proyecto final paradigmas de programacion\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|solutionrelative:proyecto final paradigmas de programacion\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{50562243-84D9-09EE-9D6B-B885FA28B926}|Proyecto Final Paradigmas de Programacion\\Proyecto Final Paradigmas de Programacion.csproj|c:\\users\\user\\desktop\\proyecto-final-paradigmas-de-programacion\\proyecto final paradigmas de programacion\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -46,11 +106,219 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Views\\Reportes\\Index.cshtml",
+              "RelativeDocumentMoniker": "Proyecto Final Paradigmas de Programacion\\Views\\Reportes\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Views\\Reportes\\Index.cshtml",
+              "RelativeToolTip": "Proyecto Final Paradigmas de Programacion\\Views\\Reportes\\Index.cshtml",
+              "ViewState": "AgIAACIAAAAAAAAAAAAUwDMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-26T00:12:39.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReportesController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Controllers\\ReportesController.cs",
+              "RelativeDocumentMoniker": "Proyecto Final Paradigmas de Programacion\\Controllers\\ReportesController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Controllers\\ReportesController.cs",
+              "RelativeToolTip": "Proyecto Final Paradigmas de Programacion\\Controllers\\ReportesController.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAUwBUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-26T00:09:23.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ReporteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Repositories\\ReporteRepository.cs",
+              "RelativeDocumentMoniker": "Proyecto Final Paradigmas de Programacion\\Repositories\\ReporteRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Repositories\\ReporteRepository.cs",
+              "RelativeToolTip": "Proyecto Final Paradigmas de Programacion\\Repositories\\ReporteRepository.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAUwE0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-26T00:05:06.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Repositories\\UsuarioRepository.cs",
+              "RelativeDocumentMoniker": "Proyecto Final Paradigmas de Programacion\\Repositories\\UsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Repositories\\UsuarioRepository.cs",
+              "RelativeToolTip": "Proyecto Final Paradigmas de Programacion\\Repositories\\UsuarioRepository.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-25T23:51:56.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Prioridad.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Models\\Prioridad.cs",
+              "RelativeDocumentMoniker": "Proyecto Final Paradigmas de Programacion\\Models\\Prioridad.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Models\\Prioridad.cs",
+              "RelativeToolTip": "Proyecto Final Paradigmas de Programacion\\Models\\Prioridad.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-25T23:47:51.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Estado.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Models\\Estado.cs",
+              "RelativeDocumentMoniker": "Proyecto Final Paradigmas de Programacion\\Models\\Estado.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Models\\Estado.cs",
+              "RelativeToolTip": "Proyecto Final Paradigmas de Programacion\\Models\\Estado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-25T23:47:19.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TipoDanio.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Models\\TipoDanio.cs",
+              "RelativeDocumentMoniker": "Proyecto Final Paradigmas de Programacion\\Models\\TipoDanio.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Models\\TipoDanio.cs",
+              "RelativeToolTip": "Proyecto Final Paradigmas de Programacion\\Models\\TipoDanio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-25T23:46:48.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ConexionDB.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Data\\ConexionDB.cs",
+              "RelativeDocumentMoniker": "Proyecto Final Paradigmas de Programacion\\Data\\ConexionDB.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Data\\ConexionDB.cs",
+              "RelativeToolTip": "Proyecto Final Paradigmas de Programacion\\Data\\ConexionDB.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAUwA0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-25T23:32:39.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Reporte.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Models\\Reporte.cs",
+              "RelativeDocumentMoniker": "Proyecto Final Paradigmas de Programacion\\Models\\Reporte.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Models\\Reporte.cs",
+              "RelativeToolTip": "Proyecto Final Paradigmas de Programacion\\Models\\Reporte.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-25T23:30:07.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "Proyecto Final Paradigmas de Programacion\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Models\\Usuario.cs",
+              "RelativeToolTip": "Proyecto Final Paradigmas de Programacion\\Models\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAYwAoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-25T23:28:55.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\appsettings.json",
+              "RelativeDocumentMoniker": "Proyecto Final Paradigmas de Programacion\\appsettings.json",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\appsettings.json",
+              "RelativeToolTip": "Proyecto Final Paradigmas de Programacion\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-07-25T23:02:43.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Proyecto Final Paradigmas de Programacion\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Proyecto Final Paradigmas de Programacion\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAIwBwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-22T04:31:15.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Proyecto Final Paradigmas de Programacion\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Proyecto Final Paradigmas de Programacion\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-21T20:00:33.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Proyecto Final Paradigmas de Programacion\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\appsettings.Development.json",
+              "RelativeToolTip": "Proyecto Final Paradigmas de Programacion\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-07-25T23:02:47.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Proyecto Final Paradigmas de Programacion\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Proyecto Final Paradigmas de Programacion\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAADwvx4AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-07-22T04:32:06.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Proyecto Final Paradigmas de Programacion\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Proyecto Final Paradigmas de Programacion\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-22T04:31:13.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Proyecto Final Paradigmas de Programacion\\Views\\_ViewImports.cshtml",
@@ -63,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 17,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "Proyecto Final Paradigmas de Programacion\\Views\\Home\\Privacy.cshtml",
@@ -76,72 +344,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Proyecto Final Paradigmas de Programacion\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Proyecto Final Paradigmas de Programacion\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-21T20:00:33.095Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 18,
               "Title": "bootstrap.js",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
               "RelativeDocumentMoniker": "Proyecto Final Paradigmas de Programacion\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
               "ToolTip": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
               "RelativeToolTip": "Proyecto Final Paradigmas de Programacion\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
-              "ViewState": "AgIAAJ4OAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJsOAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2026-07-21T19:59:57.728Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 19,
               "Title": "bootstrap-utilities.css",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
               "RelativeDocumentMoniker": "Proyecto Final Paradigmas de Programacion\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
               "ToolTip": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
               "RelativeToolTip": "Proyecto Final Paradigmas de Programacion\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2026-07-21T19:59:55.338Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 20,
               "Title": "bootstrap-reboot.css",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
               "RelativeDocumentMoniker": "Proyecto Final Paradigmas de Programacion\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
               "ToolTip": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
               "RelativeToolTip": "Proyecto Final Paradigmas de Programacion\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2026-07-21T19:59:53.474Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 21,
               "Title": "bootstrap.css",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
               "RelativeDocumentMoniker": "Proyecto Final Paradigmas de Programacion\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
               "ToolTip": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
               "RelativeToolTip": "Proyecto Final Paradigmas de Programacion\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2026-07-21T19:59:51.392Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 22,
               "Title": "site.js",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "Proyecto Final Paradigmas de Programacion\\wwwroot\\js\\site.js",
@@ -154,7 +409,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 23,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\Proyecto-Final-Paradigmas-de-Programacion\\Proyecto Final Paradigmas de Programacion\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "Proyecto Final Paradigmas de Programacion\\wwwroot\\css\\site.css",
