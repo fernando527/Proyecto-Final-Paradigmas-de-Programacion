@@ -189,7 +189,6 @@ C:\Users\ialas\OneDrive\Documentos\GitHub\Proyecto-Final-Paradigmas-de-Programac
 C:\Users\ialas\OneDrive\Documentos\GitHub\Proyecto-Final-Paradigmas-de-Programacion\Proyecto Final Paradigmas de Programacion\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\ialas\OneDrive\Documentos\GitHub\Proyecto-Final-Paradigmas-de-Programacion\Proyecto Final Paradigmas de Programacion\obj\Debug\net10.0\scopedcss\bundle\Proyecto Final Paradigmas de Programacion.styles.css
 C:\Users\ialas\OneDrive\Documentos\GitHub\Proyecto-Final-Paradigmas-de-Programacion\Proyecto Final Paradigmas de Programacion\obj\Debug\net10.0\scopedcss\projectbundle\Proyecto Final Paradigmas de Programacion.bundle.scp.css
-C:\Users\ialas\OneDrive\Documentos\GitHub\Proyecto-Final-Paradigmas-de-Programacion\Proyecto Final Paradigmas de Programacion\obj\Debug\net10.0\compressed\zy43hjcsuz-{0}-b9sayid5wm-b9sayid5wm.gz
 C:\Users\ialas\OneDrive\Documentos\GitHub\Proyecto-Final-Paradigmas-de-Programacion\Proyecto Final Paradigmas de Programacion\obj\Debug\net10.0\compressed\pmtsnqopwp-{0}-61n19gt1b8-61n19gt1b8.gz
 C:\Users\ialas\OneDrive\Documentos\GitHub\Proyecto-Final-Paradigmas-de-Programacion\Proyecto Final Paradigmas de Programacion\obj\Debug\net10.0\compressed\2lhqhfeb1c-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 C:\Users\ialas\OneDrive\Documentos\GitHub\Proyecto-Final-Paradigmas-de-Programacion\Proyecto Final Paradigmas de Programacion\obj\Debug\net10.0\compressed\jh2yd7hx27-{0}-t1cqhe9u97-t1cqhe9u97.gz
@@ -266,3 +265,4 @@ C:\Users\ialas\OneDrive\Documentos\GitHub\Proyecto-Final-Paradigmas-de-Programac
 C:\Users\ialas\OneDrive\Documentos\GitHub\Proyecto-Final-Paradigmas-de-Programacion\Proyecto Final Paradigmas de Programacion\obj\Debug\net10.0\Proyecto Final Paradigmas de Programacion.genruntimeconfig.cache
 C:\Users\ialas\OneDrive\Documentos\GitHub\Proyecto-Final-Paradigmas-de-Programacion\Proyecto Final Paradigmas de Programacion\obj\Debug\net10.0\ref\Proyecto Final Paradigmas de Programacion.dll
 C:\Users\User\Desktop\Proyecto-Final-Paradigmas-de-Programacion\Proyecto Final Paradigmas de Programacion\obj\Debug\net10.0\compressed\zy43hjcsuz-{0}-o1ghu6oi76-o1ghu6oi76.gz
+C:\Users\ialas\OneDrive\Documentos\GitHub\Proyecto-Final-Paradigmas-de-Programacion\Proyecto Final Paradigmas de Programacion\obj\Debug\net10.0\compressed\zy43hjcsuz-{0}-opsj3bgb5p-opsj3bgb5p.gz

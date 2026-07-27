@@ -52,3 +52,73 @@ body {
     background-color: green;
     color: black;
 }
+
+:root {
+    --azul-principal: #0339A6;
+    --azul-secundario: #04328C;
+    --azul-oscuro: #0F1626;
+    --azul-gris: #264773;
+    --dorado: #F2A516;
+}
+
+.navbar {
+    background: var(--azul-secundario) !important;
+}
+
+.navbar a {
+    color: white !important;
+}
+
+.navbar a:hover {
+    color: var(--dorado) !important;
+}
+
+footer {
+    background: var(--azul-oscuro);
+    color: white;
+}
+
+.card {
+    border: none;
+    border-radius: 18px;
+    transition: .3s;
+}
+
+.card:hover {
+transform: translateY(-8px);
+box-shadow: 0 15px 30px rgba(0,0,0,.20);
+}
+
+h1 {
+    color: var(--azul-principal);
+    font-weight: bold;
+}
+
+.btn-primary {
+    background: var(--azul-principal);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: var(--azul-secundario);
+}
+
+.btn-danger:hover {
+    background: #1d2b48;
+}
+
+.btn-success {
+    background: var(--azul-gris);
+    border: none;
+}
+
+.btn-warning {
+    background: var(--dorado);
+    border: none;
+}
+
+thead {
+    background: var(--azul-oscuro);
+    color: white;
+}
+
