@@ -13,6 +13,7 @@ namespace Proyecto_Final_Paradigmas_de_Programacion.Repositories
             conexion = new ConexionDB();
         }
 
+        //inicio de sesion 
         public Usuario? Login(string correo, string contrasena)
         {
             using var con = conexion.ObtenerConexion();
@@ -31,5 +32,56 @@ namespace Proyecto_Final_Paradigmas_de_Programacion.Repositories
                     Contrasena = contrasena
                 });
         }
+
+        //creacion de usuarios nuevos
+        public void CrearUsuario(Usuario usuario)
+        {
+            using var con = conexion.ObtenerConexion();
+
+
+            string sql = @"
+               INSERT INTO Usuarios
+               (
+                   Nombre,
+                   Correo,
+                   Contrasena,
+                   Rol
+               )
+               VALUES
+               (
+                   @Nombre,
+                   @Correo,
+                   @Contrasena,
+                   'Usuario'
+               )";
+
+
+            con.Execute(sql, usuario);
+        }
+
+        //validar que no hayan correos repetidos
+        public bool ExisteCorreo(string correo)
+        {
+            using var con = conexion.ObtenerConexion();
+
+
+            string sql = @"
+                  SELECT COUNT(*)
+                  FROM Usuarios
+                  WHERE Correo = @Correo";
+
+
+            int cantidad = con.ExecuteScalar<int>(
+                sql,
+                new
+                {
+                    Correo = correo
+                });
+
+
+            return cantidad > 0;
+        }
+
+
     }
 }

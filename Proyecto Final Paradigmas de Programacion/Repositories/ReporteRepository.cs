@@ -205,6 +205,29 @@ namespace Proyecto_Final_Paradigmas_de_Programacion.Repositories
         }
 
 
+        //consulta para los dashbord
+
+        public Dashboard ObtenerDashboard()
+        {
+            using var con = conexion.ObtenerConexion();
+
+
+            string sql = @"SELECT
+            COUNT(*) AS TotalReportes,
+                SUM(CASE WHEN IdEstado = 1 THEN 1 ELSE 0 END) AS Pendientes,
+                SUM(CASE WHEN IdEstado = 2 THEN 1 ELSE 0 END) AS EnRevision,
+                SUM(CASE WHEN IdEstado = 3 THEN 1 ELSE 0 END) AS EnProceso,
+                SUM(CASE WHEN IdEstado = 4 THEN 1 ELSE 0 END) AS Reparados,
+                SUM(CASE WHEN EsUrgente = 1 THEN 1 ELSE 0 END) AS Urgentes,
+                SUM(CASE WHEN IdPrioridad = 3 THEN 1 ELSE 0 END) AS PrioridadAlta,
+                SUM(CASE WHEN IdPrioridad = 2 THEN 1 ELSE 0 END) AS PrioridadMedia,
+                SUM(CASE WHEN IdPrioridad = 1 THEN 1 ELSE 0 END) AS PrioridadBaja
+                FROM Reportes ";
+            return con.QueryFirstOrDefault<Dashboard>(sql);
+
+        }
 
     }
+
+
 }

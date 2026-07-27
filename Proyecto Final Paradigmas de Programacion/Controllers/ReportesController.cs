@@ -65,10 +65,10 @@ namespace Proyecto_Final_Paradigmas_de_Programacion.Controllers
         {
 
             if (string.IsNullOrWhiteSpace(reporte.Edificio) ||
-               string.IsNullOrWhiteSpace(reporte.Aula) ||
-               string.IsNullOrWhiteSpace(reporte.Descripcion) ||
-               reporte.IdTipoDanio == 0 ||
-               reporte.IdPrioridad == 0)
+                string.IsNullOrWhiteSpace(reporte.Aula) ||
+                string.IsNullOrWhiteSpace(reporte.Descripcion) ||
+                reporte.IdTipoDanio == 0 ||
+                reporte.IdPrioridad == 0)
             {
                 ViewBag.Error = "Todos los campos son obligatorios";
 
@@ -77,17 +77,14 @@ namespace Proyecto_Final_Paradigmas_de_Programacion.Controllers
                 else
                     ViewBag.Modo = "Editar";
 
-
                 return View("Formulario", reporte);
             }
 
 
-
-            // en caso de crear
+            // En caso de crear
             if (reporte.IdReporte == 0)
             {
                 var idUsuario = HttpContext.Session.GetInt32("IdUsuario");
-
 
                 if (idUsuario == null)
                 {
@@ -97,22 +94,25 @@ namespace Proyecto_Final_Paradigmas_de_Programacion.Controllers
                     );
                 }
 
-
                 reporte.IdUsuario = idUsuario.Value;
-
 
                 reporteRepository.CrearReporte(reporte);
             }
 
-            // en caso de editar
+            // En caso de editar
             else
             {
                 reporteRepository.ActualizarReporte(reporte);
             }
 
 
+            // Redirección según el rol del usuario
+            if (HttpContext.Session.GetString("Rol") == "Administrador")
+            {
+                return RedirectToAction("Index");
+            }
 
-            return RedirectToAction("Index");
+            return RedirectToAction("MisReportes");
         }
 
 

@@ -1,0 +1,382 @@
+﻿@model Proyecto_Final_Paradigmas_de_Programacion.Models.Dashboard
+
+
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+
+<div class="container mt-4">
+
+
+    <h1 class="text-center">
+        Dashboard Administrativo
+    </h1>
+
+
+    <hr>
+
+
+
+    <!-- TARJETAS -->
+
+    <div class="row">
+
+
+        <div class="col-md-4 mb-3">
+
+            <div class="card shadow">
+
+                <div class="card-body text-center">
+
+                    <h5>
+                        Total Reportes
+                    </h5>
+
+                    <h2>
+                        @Model.TotalReportes
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="col-md-4 mb-3">
+
+            <div class="card shadow">
+
+                <div class="card-body text-center">
+
+                    <h5>
+                        Pendientes
+                    </h5>
+
+                    <h2>
+                        @Model.Pendientes
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="col-md-4 mb-3">
+
+            <div class="card shadow">
+
+                <div class="card-body text-center">
+
+                    <h5>
+                        En revisión
+                    </h5>
+
+                    <h2>
+                        @Model.EnRevision
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="col-md-4 mb-3">
+
+            <div class="card shadow">
+
+                <div class="card-body text-center">
+
+                    <h5>
+                        En proceso
+                    </h5>
+
+                    <h2>
+                        @Model.EnProceso
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="col-md-4 mb-3">
+
+            <div class="card shadow">
+
+                <div class="card-body text-center">
+
+                    <h5>
+                        Reparados
+                    </h5>
+
+                    <h2>
+                        @Model.Reparados
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="col-md-4 mb-3">
+
+            <div class="card shadow">
+
+                <div class="card-body text-center">
+
+                    <h5>
+                        Urgentes
+                    </h5>
+
+                    <h2>
+                        @Model.Urgentes
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+    <!-- GRAFICAS -->
+
+
+    <div class="row mt-5">
+
+
+        <!-- Grafica Estados -->
+
+        <div class="col-md-6 mb-4">
+
+
+            <div class="card shadow">
+
+
+                <div class="card-body">
+
+
+                    <h4 class="text-center">
+                        Estados de Reportes
+                    </h4>
+
+
+                    <canvas id="graficaEstados"></canvas>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+        <!-- Grafica Prioridades -->
+
+
+        <div class="col-md-6 mb-4">
+
+
+            <div class="card shadow">
+
+
+                <div class="card-body">
+
+
+                    <h4 class="text-center">
+                        Prioridad de Reportes
+                    </h4>
+
+
+                    <canvas id="graficaPrioridades"></canvas>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+<!-- Chart.js -->
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+<script>
+
+
+    // Grafica de estados
+
+
+    const estados = document.getElementById('graficaEstados');
+
+
+    new Chart(estados, {
+
+    type: 'doughnut',
+
+
+    data: {
+
+
+    labels: [
+
+    'Pendiente',
+
+    'En revisión',
+
+    'En proceso',
+
+    'Reparado'
+
+    ],
+
+
+
+    datasets: [{
+
+    data: [
+
+    @Model.Pendientes,
+
+    @Model.EnRevision,
+
+    @Model.EnProceso,
+
+    @Model.Reparados
+
+    ],
+
+    backgroundColor: [
+
+    'orange',      // Pendiente
+
+    'yellow',      // En revisión
+
+    'blue',        // En proceso
+
+    'green'        // Reparado
+
+    ]
+
+    }]
+
+
+    }
+
+
+    });
+
+
+
+
+
+
+
+    // Grafica de prioridades
+
+
+    const prioridades = document.getElementById('graficaPrioridades');
+
+
+    new Chart(prioridades, {
+
+
+    type: 'bar',
+
+
+
+    data: {
+
+
+    labels: [
+
+    'Baja',
+
+    'Media',
+
+    'Alta'
+
+    ],
+
+
+
+    datasets: [{
+
+    label: 'Cantidad de reportes',
+
+
+    data: [
+
+    @Model.PrioridadBaja,
+
+    @Model.PrioridadMedia,
+
+    @Model.PrioridadAlta
+
+    ]
+
+
+    }]
+
+
+    }
+
+
+
+    });
+
+
+
+</script>

@@ -1,0 +1,96 @@
+﻿@model Proyecto_Final_Paradigmas_de_Programacion.Models.RegistroUsuario
+
+@{
+    ViewData["Title"] = "Crear Cuenta";
+}
+
+
+<div class="container mt-5">
+
+
+    <h1 class="text-center">
+        Crear Cuenta
+    </h1>
+
+
+    <hr>
+
+
+    <form asp-action="CrearCuenta" method="post">
+
+
+        <div class="mb-3">
+
+            <label>
+                Nombre
+            </label>
+
+            <input asp-for="Nombre"
+                   class="form-control" />
+
+        </div>
+
+
+
+        <div class="mb-3">
+
+            <label>
+                Correo
+            </label>
+
+            <input asp-for="Correo"
+                   class="form-control" />
+
+        </div>
+
+
+
+        <div class="mb-3">
+
+            <label>
+                Contraseña
+            </label>
+
+            <input asp-for="Contrasena"
+                   type="password"
+                   class="form-control" />
+
+        </div>
+
+        <div class="mb-3">
+
+            <label>
+                Confirmar contraseña
+            </label>
+
+
+            <input asp-for="ConfirmarContrasena"
+                   type="password"
+                   class="form-control" />
+
+        </div>
+
+
+
+        <button type="submit"
+                class="btn btn-primary">
+
+            Registrarse
+
+        </button>
+
+
+    </form>
+
+
+    @if (ViewBag.Error != null)
+    {
+
+        <p class="text-danger mt-3">
+            @ViewBag.Error
+        </p>
+
+    }
+
+
+</div>

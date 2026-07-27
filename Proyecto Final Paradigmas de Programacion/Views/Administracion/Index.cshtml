@@ -36,7 +36,35 @@
 
 
                     <td>
-                        @reporte.NombreEstado
+
+                        @if (reporte.IdEstado == 1)
+                        {
+                            <span class="badge estado-pendiente">
+                                🟠 Pendiente
+                            </span>
+                        }
+
+                        else if (reporte.IdEstado == 2)
+                        {
+                            <span class="badge estado-revision">
+                                🟡 En revisión
+                            </span>
+                        }
+
+                        else if (reporte.IdEstado == 3)
+                        {
+                            <span class="badge estado-proceso">
+                                🔵 En proceso
+                            </span>
+                        }
+
+                        else if (reporte.IdEstado == 4)
+                        {
+                            <span class="badge estado-reparado">
+                                🟢 Reparado
+                            </span>
+                        }
+
                     </td>
 
 

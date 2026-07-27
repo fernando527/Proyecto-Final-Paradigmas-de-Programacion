@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Proyecto_Final_Paradigmas_de_Programacion.Filters;
 using Proyecto_Final_Paradigmas_de_Programacion.Repositories;
+using Proyecto_Final_Paradigmas_de_Programacion.Models;
 
 namespace Proyecto_Final_Paradigmas_de_Programacion.Controllers
 {
@@ -49,6 +50,14 @@ namespace Proyecto_Final_Paradigmas_de_Programacion.Controllers
 
 
             return RedirectToAction("Index");
+        }
+
+        public IActionResult Dashboard()
+        {
+            var datos = reporteRepository.ObtenerDashboard();
+
+
+            return View(datos);
         }
 
     }
