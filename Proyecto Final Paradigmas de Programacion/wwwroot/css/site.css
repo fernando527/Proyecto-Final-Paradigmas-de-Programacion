@@ -21,13 +21,11 @@ body {
   margin-bottom: 60px;
 }
 
-/* Fondo global con la paleta UNAH */
 body {
     background: var(--azul-oscuro);
     color: #e9eef8;
 }
 
-/* Estilos para el formulario de login (globalizados) */
 .login-card {
     background: #fff;
     color: var(--azul-oscuro);
@@ -48,7 +46,31 @@ body {
 }
 
 .form-label {
-    color: rgba(0,0,0,0.75);
+    color: #e9eef8 !important;
+}
+
+.card .form-label,
+.card-menu .form-label,
+.login-card .form-label,
+.report-card .form-label,
+.chart-card .form-label {
+    color: var(--surface-text) !important;
+}
+
+h1, h2, h3, h4 {
+    color: #e9eef8;
+}
+
+.card .form-control::placeholder,
+.login-card .form-control::placeholder,
+.report-card .form-control::placeholder {
+    color: rgba(0,0,0,0.45) !important;
+}
+
+.card .form-control,
+.login-card .form-control,
+.report-card .form-control {
+    color: var(--surface-text) !important;
 }
 
 .btn-primary {
@@ -56,7 +78,6 @@ body {
     border: none;
 }
 
-/* Botón principal estilo UNAH usado en tarjetas */
 .btn-unah {
     background: var(--azul-principal) !important;
     color: #fff !important;
@@ -71,7 +92,6 @@ body {
     color: #fff !important;
 }
 
-/* Botón dorado para enlaces importantes */
 .btn-dorado {
     background: var(--dorado) !important;
     color: #000 !important;
@@ -85,13 +105,11 @@ body {
     background: #d89e12 !important;
 }
 
-/* Asegurar que los botones dentro de las cards se muestren centrados y visibles */
 .card .btn {
     margin-top: 1rem;
     display: inline-block;
 }
 
-/* Asegurar estilos consistentes para todas las variantes de botones */
 .btn-success {
     background: var(--azul-gris) !important;
     color: #fff !important;
@@ -99,7 +117,7 @@ body {
 }
 
 .btn-dark {
-    background: rgba(15,22,38,0.95) !important; /* ligeramente distinto del fondo */
+    background: rgba(15,22,38,0.95) !important;
     color: #fff !important;
     border: none !important;
 }
@@ -108,13 +126,11 @@ body {
     color: #000 !important;
 }
 
-/* Aumentar legibilidad de botones pequeños dentro de tarjetas */
 .card .btn {
     padding: .45rem 1rem !important;
     font-weight: 600;
 }
 
-/* Botones con clase rounded-pill deben mantener contraste y tamaño */
 .rounded-pill.btn {
     padding-left: 1.25rem !important;
     padding-right: 1.25rem !important;
@@ -228,9 +244,7 @@ thead {
     color: white;
 }
 
-/* Estilos para la tabla de reportes */
 .reportes-table thead th {
-    /* Encabezado de tabla: fondo oscuro azul secundario y texto blanco para buena legibilidad */
     background: var(--azul-secundario) !important;
     color: #fff !important;
     border-bottom: 2px solid var(--azul-principal);
@@ -240,7 +254,7 @@ thead {
 
 .reportes-table tbody td {
     vertical-align: middle;
-    background: transparent; /* usar filas para el color */
+    background: transparent;
 }
 
 .reportes-table th, .reportes-table td {
@@ -279,28 +293,35 @@ thead {
     overflow-x: auto;
 }
 
-/* Reemplazar blancos puros en tablas y tarjetas por superficies suaves */
+
 .table,
 .table td,
 .table th {
     background: transparent;
 }
 
-/* Encabezados de todas las tablas: fondo azul secundario y texto blanco para legibilidad */
+.table.table-bordered > tbody > tr > td,
+.table.table-bordered > tbody > tr > th {
+    background: var(--surface-2) !important;
+    color: var(--surface-text) !important;
+}
+
+.table.table-bordered {
+    border-color: rgba(0,0,0,0.15) !important;
+}
+
+
 .table thead th {
     background: var(--azul-secundario) !important;
     color: #fff !important;
     border-bottom: 2px solid var(--azul-principal) !important;
 }
 
-/* Asegurar que los th dentro de tablas rayadas mantienen contraste */
 .table-striped > tbody > tr > th,
 .table-striped > tbody > tr > td {
     color: var(--surface-text);
 }
 
-/* Alinear apariencia de tablas normales (usuario) con la versión blanca:
-   filas alternadas: blanco puro y superficie suave, texto oscuro */
 .table-striped > tbody > tr:nth-of-type(odd) > td,
 .table-striped > tbody > tr:nth-of-type(odd) > th {
     background: #ffffff !important;
@@ -314,21 +335,18 @@ thead {
     color: var(--surface-text) !important;
 }
 
-/* Asegurar que el borde de las celdas sea visible sobre el fondo oscuro */
 .table, .table th, .table td {
     border-color: rgba(0,0,0,0.15) !important;
 }
 
-/* Reparación específica: asegurar que las celdas de las tablas de reportes
    muestren texto oscuro sobre fondo claro (evita que se mezclen con el fondo oscuro) */
 .reportes-table tbody tr td,
 .table-striped.reportes-table tbody tr td,
 .table-striped tbody tr td {
-    background: transparent; /* leave cell bg to row rules */
-    color: #222 !important; /* texto oscuro legible sobre filas claras */
+    background: transparent;
+    color: #222 !important;
 }
 
-/* Forzar que las filas rayadas realmente muestren el fondo blanco/clarito */
 .reportes-table.table-striped > tbody > tr:nth-of-type(odd) > td,
 .table-striped > tbody > tr:nth-of-type(odd) > td {
     background: #ffffff !important;
@@ -338,14 +356,12 @@ thead {
     background: var(--surface-2) !important;
 }
 
-/* Asegurar que el texto de cabeceras permanezca blanco sobre azul */
 .reportes-table thead th,
 .table thead th {
     background: var(--azul-secundario) !important;
     color: #fff !important;
 }
 
-/* Filas alternadas con superficie suave */
 .table-striped > tbody > tr:nth-of-type(odd) > td {
     background: var(--surface);
 }
@@ -353,7 +369,6 @@ thead {
     background: var(--surface-2);
 }
 
-/* tarjetas generales y contenedores claros usados por la UI */
 .card-menu,
 .login-card,
 .report-card,
@@ -362,28 +377,28 @@ thead {
     color: var(--surface-text);
 }
 
-/* Encabezados de secciones que antes eran blancos */
 .section-header,
 .panel-header {
     background: var(--surface-header);
     color: var(--surface-text);
 }
 
-/* Modales y diálogo */
 .modal-content {
     background: var(--surface);
     color: var(--surface-text);
 }
 
-/* Navbar logo */
 .navbar-logo {
     height: 32px;
     margin-right: 10px;
 }
 
-/* Footer contrast en fondo oscuro */
 footer {
     background: var(--azul-oscuro);
     color: white;
 }
 
+h3 {
+    color: white;
+    font-weight: bold;
+}

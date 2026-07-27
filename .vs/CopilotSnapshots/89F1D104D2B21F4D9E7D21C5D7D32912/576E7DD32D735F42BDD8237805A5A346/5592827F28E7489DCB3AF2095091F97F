@@ -1,0 +1,391 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/* Fondo global con la paleta UNAH */
+body {
+    background: var(--azul-oscuro);
+    color: #e9eef8;
+}
+
+/* Estilos para el formulario de login (globalizados) */
+.login-card {
+    background: #fff;
+    color: var(--azul-oscuro);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 12px 30px rgba(2,6,23,0.4);
+}
+
+.unah-logo {
+    display: block;
+    margin: 0 auto 1rem auto;
+    max-width: 140px;
+}
+
+.login-title {
+    color: var(--dorado);
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    color: rgba(0,0,0,0.75);
+}
+
+.btn-primary {
+    background: var(--azul-principal);
+    border: none;
+}
+
+/* Botón principal estilo UNAH usado en tarjetas */
+.btn-unah {
+    background: var(--azul-principal) !important;
+    color: #fff !important;
+    border: none !important;
+    padding: .5rem 1.25rem !important;
+    border-radius: 24px !important;
+    display: inline-block !important;
+}
+
+.btn-unah:hover {
+    background: var(--azul-secundario) !important;
+    color: #fff !important;
+}
+
+/* Botón dorado para enlaces importantes */
+.btn-dorado {
+    background: var(--dorado) !important;
+    color: #000 !important;
+    border: none !important;
+    padding: .5rem 1.25rem !important;
+    border-radius: 24px !important;
+    display: inline-block !important;
+}
+
+.btn-dorado:hover {
+    background: #d89e12 !important;
+}
+
+/* Asegurar que los botones dentro de las cards se muestren centrados y visibles */
+.card .btn {
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+/* Asegurar estilos consistentes para todas las variantes de botones */
+.btn-success {
+    background: var(--azul-gris) !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+.btn-dark {
+    background: rgba(15,22,38,0.95) !important; /* ligeramente distinto del fondo */
+    color: #fff !important;
+    border: none !important;
+}
+
+.btn-warning, .btn-warning:focus {
+    color: #000 !important;
+}
+
+/* Aumentar legibilidad de botones pequeños dentro de tarjetas */
+.card .btn {
+    padding: .45rem 1rem !important;
+    font-weight: 600;
+}
+
+/* Botones con clase rounded-pill deben mantener contraste y tamaño */
+.rounded-pill.btn {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+.estado-pendiente {
+    background-color: orange;
+    color: black;
+}
+
+
+.estado-revision {
+    background-color: gold;
+    color: black;
+}
+
+
+.estado-proceso {
+    background-color: dodgerblue;
+    color: black;
+}
+
+
+.estado-reparado {
+    background-color: green;
+    color: black;
+}
+
+:root {
+    --azul-principal: #0339A6;
+    --azul-secundario: #04328C;
+    --azul-oscuro: #0F1626;
+    --azul-gris: #264773;
+    --dorado: #F2A516;
+    /* Superficies claras que combinan con la paleta UNAH (usar en lugar de blanco puro) */
+    --surface: #eef6ff; /* tono muy suave azulado */
+    --surface-2: #f4f7fb; /* alternativa ligeramente neutra */
+    --surface-header: #e6f0ff; /* encabezados de tablas/cards */
+    --surface-text: #0f1626; /* texto sobre superficies claras */
+}
+
+.navbar {
+    background: var(--azul-secundario) !important;
+}
+
+.navbar a {
+    color: white !important;
+}
+
+.navbar a:hover {
+    color: var(--dorado) !important;
+}
+
+footer {
+    background: var(--azul-oscuro);
+    color: white;
+}
+
+.card {
+    border: none;
+    border-radius: 18px;
+    transition: .3s;
+    background: var(--surface);
+    color: var(--surface-text);
+}
+
+.card:hover {
+transform: translateY(-8px);
+box-shadow: 0 15px 30px rgba(0,0,0,.20);
+}
+
+h1 {
+    color: var(--azul-principal);
+    font-weight: bold;
+}
+
+.btn-primary {
+    background: var(--azul-principal);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: var(--azul-secundario);
+}
+
+.btn-danger:hover {
+    background: #1d2b48;
+}
+
+.btn-success {
+    background: var(--azul-gris);
+    border: none;
+}
+
+.btn-warning {
+    background: var(--dorado);
+    border: none;
+}
+
+thead {
+    background: var(--azul-oscuro);
+    color: white;
+}
+
+/* Estilos para la tabla de reportes */
+.reportes-table thead th {
+    /* Encabezado de tabla: fondo oscuro azul secundario y texto blanco para buena legibilidad */
+    background: var(--azul-secundario) !important;
+    color: #fff !important;
+    border-bottom: 2px solid var(--azul-principal);
+    text-align: left;
+    vertical-align: middle;
+}
+
+.reportes-table tbody td {
+    vertical-align: middle;
+    background: transparent; /* usar filas para el color */
+}
+
+.reportes-table th, .reportes-table td {
+    padding: .9rem .75rem;
+}
+
+.acciones {
+    width: 120px;
+}
+
+.acciones .btn {
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.btn-warning {
+    background: var(--dorado);
+    color: #000;
+    border: none;
+}
+
+.btn-warning:hover {
+    background: #d69011;
+}
+
+.btn-danger {
+    background: #d9534f;
+    border: none;
+}
+
+.btn-danger:hover {
+    background: #c9302c;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* Reemplazar blancos puros en tablas y tarjetas por superficies suaves */
+.table,
+.table td,
+.table th {
+    background: transparent;
+}
+
+/* Encabezados de todas las tablas: fondo azul secundario y texto blanco para legibilidad */
+.table thead th {
+    background: var(--azul-secundario) !important;
+    color: #fff !important;
+    border-bottom: 2px solid var(--azul-principal) !important;
+}
+
+/* Asegurar que los th dentro de tablas rayadas mantienen contraste */
+.table-striped > tbody > tr > th,
+.table-striped > tbody > tr > td {
+    color: var(--surface-text);
+}
+
+/* Alinear apariencia de tablas normales (usuario) con la versión blanca:
+   filas alternadas: blanco puro y superficie suave, texto oscuro */
+.table-striped > tbody > tr:nth-of-type(odd) > td,
+.table-striped > tbody > tr:nth-of-type(odd) > th {
+    background: #ffffff !important;
+}
+.table-striped > tbody > tr:nth-of-type(even) > td,
+.table-striped > tbody > tr:nth-of-type(even) > th {
+    background: var(--surface-2) !important;
+}
+
+.table td, .table th {
+    color: var(--surface-text) !important;
+}
+
+/* Asegurar que el borde de las celdas sea visible sobre el fondo oscuro */
+.table, .table th, .table td {
+    border-color: rgba(0,0,0,0.15) !important;
+}
+
+/* Reparación específica: asegurar que las celdas de las tablas de reportes
+   muestren texto oscuro sobre fondo claro (evita que se mezclen con el fondo oscuro) */
+.reportes-table tbody tr td,
+.table-striped.reportes-table tbody tr td,
+.table-striped tbody tr td {
+    background: transparent; /* leave cell bg to row rules */
+    color: #222 !important; /* texto oscuro legible sobre filas claras */
+}
+
+/* Forzar que las filas rayadas realmente muestren el fondo blanco/clarito */
+.reportes-table.table-striped > tbody > tr:nth-of-type(odd) > td,
+.table-striped > tbody > tr:nth-of-type(odd) > td {
+    background: #ffffff !important;
+}
+.reportes-table.table-striped > tbody > tr:nth-of-type(even) > td,
+.table-striped > tbody > tr:nth-of-type(even) > td {
+    background: var(--surface-2) !important;
+}
+
+/* Asegurar que el texto de cabeceras permanezca blanco sobre azul */
+.reportes-table thead th,
+.table thead th {
+    background: var(--azul-secundario) !important;
+    color: #fff !important;
+}
+
+/* Filas alternadas con superficie suave */
+.table-striped > tbody > tr:nth-of-type(odd) > td {
+    background: var(--surface);
+}
+.table-striped > tbody > tr:nth-of-type(even) > td {
+    background: var(--surface-2);
+}
+
+/* tarjetas generales y contenedores claros usados por la UI */
+.card-menu,
+.login-card,
+.report-card,
+.chart-card {
+    background: var(--surface);
+    color: var(--surface-text);
+}
+
+/* Encabezados de secciones que antes eran blancos */
+.section-header,
+.panel-header {
+    background: var(--surface-header);
+    color: var(--surface-text);
+}
+
+/* Modales y diálogo */
+.modal-content {
+    background: var(--surface);
+    color: var(--surface-text);
+}
+
+.navbar-logo {
+    height: 32px;
+    margin-right: 10px;
+}
+
+footer {
+    background: var(--azul-oscuro);
+    color: white;
+}
+
+h3 {
+    color: white;
+    font-weight: bold;
+}
