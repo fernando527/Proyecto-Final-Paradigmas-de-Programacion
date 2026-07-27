@@ -265,4 +265,4 @@ C:\Users\ialas\OneDrive\Documentos\GitHub\Proyecto-Final-Paradigmas-de-Programac
 C:\Users\ialas\OneDrive\Documentos\GitHub\Proyecto-Final-Paradigmas-de-Programacion\Proyecto Final Paradigmas de Programacion\obj\Debug\net10.0\Proyecto Final Paradigmas de Programacion.genruntimeconfig.cache
 C:\Users\ialas\OneDrive\Documentos\GitHub\Proyecto-Final-Paradigmas-de-Programacion\Proyecto Final Paradigmas de Programacion\obj\Debug\net10.0\ref\Proyecto Final Paradigmas de Programacion.dll
 C:\Users\User\Desktop\Proyecto-Final-Paradigmas-de-Programacion\Proyecto Final Paradigmas de Programacion\obj\Debug\net10.0\compressed\zy43hjcsuz-{0}-o1ghu6oi76-o1ghu6oi76.gz
-C:\Users\ialas\OneDrive\Documentos\GitHub\Proyecto-Final-Paradigmas-de-Programacion\Proyecto Final Paradigmas de Programacion\obj\Debug\net10.0\compressed\zy43hjcsuz-{0}-opsj3bgb5p-opsj3bgb5p.gz
+C:\Users\ialas\OneDrive\Documentos\GitHub\Proyecto-Final-Paradigmas-de-Programacion\Proyecto Final Paradigmas de Programacion\obj\Debug\net10.0\compressed\zy43hjcsuz-{0}-qhn51uajvb-qhn51uajvb.gz

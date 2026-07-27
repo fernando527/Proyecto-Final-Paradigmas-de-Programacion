@@ -3,18 +3,27 @@
 }
 
 
+<!-- Estilos globales movidos a wwwroot/css/site.css para aplicarse en todo el sitio -->
+
+
+
 <div class="container mt-5">
 
 
     <div class="text-center">
 
-        <h1 class="display-4 fw-bold text-primary">
+
+        <h1 class="display-4 fw-bold titulo-principal">
+
             Sistema de Reporte de Daños en Aulas
+
         </h1>
 
 
-        <h3 class="text-secondary">
+        <h3 class="subtitulo fw-bold">
+
             UNAH Valle de Sula
+
         </h3>
 
 
@@ -22,9 +31,11 @@
 
 
         <p class="lead">
+
             Este sistema permite registrar y dar seguimiento a los daños
             reportados en las aulas de la UNAH-VS, facilitando la comunicación
             entre los usuarios y el personal encargado del mantenimiento.
+
         </p>
 
 
@@ -32,23 +43,27 @@
 
 
 
+
     <div class="row mt-5">
 
 
-
-        <!-- Registrar Reporte -->
+        <!-- Registrar -->
 
         <div class="col-md-6 col-lg-4 mb-4">
 
 
-            <div class="card shadow h-100">
+            <div class="card shadow h-100 card-menu">
+
+                <div class="card-header-color"></div>
 
 
                 <div class="card-body text-center">
 
 
-                    <h4>
+                    <h4 class="text-primary fw-bold">
+
                         Registrar Reporte
+
                     </h4>
 
 
@@ -58,12 +73,10 @@
 
 
                     <a asp-controller="Reportes"
-                           asp-action="Crear"
-                           class="btn btn-primary">
-
+                       asp-action="Crear"
+                       class="btn btn-unah">
 
                         Registrar
-
 
                     </a>
 
@@ -80,13 +93,17 @@
 
 
 
-        <!-- Ver reportes / Mis reportes -->
+
+        <!-- Reportes -->
 
 
         <div class="col-md-6 col-lg-4 mb-4">
 
 
-            <div class="card shadow h-100">
+            <div class="card shadow h-100 card-menu">
+
+
+                <div class="card-header-color"></div>
 
 
                 <div class="card-body text-center">
@@ -96,19 +113,21 @@
                     {
 
 
-                        <h4>
+                        <h4 class="text-success fw-bold">
+
                             Ver Reportes
+
                         </h4>
 
 
                         <p>
-                            Consultar los reportes registrados.
+                            Consultar todos los reportes registrados.
                         </p>
 
 
                         <a asp-controller="Reportes"
-                               asp-action="Index"
-                               class="btn btn-success">
+                           asp-action="Index"
+                           class="btn btn-success rounded-pill px-4">
 
 
                             Ver Reportes
@@ -122,23 +141,23 @@
                     {
 
 
-                        <h4>
+                        <h4 class="text-success fw-bold">
+
                             Mis Reportes
+
                         </h4>
 
 
                         <p>
-                            Consultar los reportes que usted ha registrado.
+                            Consultar los reportes realizados.
                         </p>
 
 
                         <a asp-controller="Reportes"
-                               asp-action="MisReportes"
-                               class="btn btn-success">
-
+                           asp-action="MisReportes"
+                           class="btn btn-success rounded-pill px-4">
 
                             Mis Reportes
-
 
                         </a>
 
@@ -158,20 +177,26 @@
 
 
 
-        <!-- Investigación -->
+
+        <!-- Acerca -->
 
 
         <div class="col-md-6 col-lg-4 mb-4">
 
 
-            <div class="card shadow h-100">
+            <div class="card shadow h-100 card-menu">
+
+
+                <div class="card-header-color"></div>
 
 
                 <div class="card-body text-center">
 
 
-                    <h4>
+                    <h4 class="text-warning fw-bold">
+
                         Investigación
+
                     </h4>
 
 
@@ -181,12 +206,10 @@
 
 
                     <a asp-controller="Home"
-                           asp-action="AcercaDelSistema"
-                           class="btn btn-primary">
-
+                       asp-action="AcercaDelSistema"
+                       class="btn btn-dorado">
 
                         Acerca del Sistema
-
 
                     </a>
 
@@ -203,22 +226,30 @@
 
 
 
-        <!-- Administración -->
+
         @if (Context.Session.GetString("Rol") == "Administrador")
         {
+
+
+            <!-- Administración -->
 
 
             <div class="col-md-6 col-lg-4 mb-4">
 
 
-                <div class="card shadow h-100">
+                <div class="card shadow h-100 card-menu">
+
+
+                    <div class="card-header-color"></div>
 
 
                     <div class="card-body text-center">
 
 
-                        <h4>
+                        <h4 class="text-danger fw-bold">
+
                             Administración
+
                         </h4>
 
 
@@ -228,16 +259,14 @@
 
 
                         <a asp-controller="Administracion"
-                               asp-action="Index"
-                               class="btn btn-danger">
+                           asp-action="Index"
+                           class="btn btn-danger rounded-pill px-4">
 
 
-                            Administrar Reportes
+                            Administrar
 
 
                         </a>
-
-
 
 
                     </div>
@@ -249,34 +278,45 @@
             </div>
 
 
+
+
+
+            <!-- Dashboard -->
+
+
             <div class="col-md-6 col-lg-4 mb-4">
 
 
-                <div class="card shadow h-100">
+                <div class="card shadow h-100 card-menu">
+
+
+                    <div class="card-header-color"></div>
 
 
                     <div class="card-body text-center">
 
 
-                        <h4>
+                        <h4 class="fw-bold text-dark">
+
                             Dashboard
+
                         </h4>
 
 
                         <p>
-                            Un Conteo de los reportes existentes.
+                            Conteo y estadísticas de reportes.
                         </p>
 
 
                         <a asp-controller="Administracion"
-                               asp-action="Dashboard"
-                               class="btn btn-dark mt-2">
+                           asp-action="Dashboard"
+                           class="btn btn-dark rounded-pill px-4">
+
 
                             Dashboard
 
+
                         </a>
-
-
 
 
                     </div>

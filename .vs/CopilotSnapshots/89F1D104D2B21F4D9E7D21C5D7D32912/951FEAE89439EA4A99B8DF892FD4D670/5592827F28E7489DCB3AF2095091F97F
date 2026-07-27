@@ -1,0 +1,172 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+.estado-pendiente {
+    background-color: orange;
+    color: black;
+}
+
+
+.estado-revision {
+    background-color: gold;
+    color: black;
+}
+
+
+.estado-proceso {
+    background-color: dodgerblue;
+    color: black;
+}
+
+
+.estado-reparado {
+    background-color: green;
+    color: black;
+}
+
+:root {
+    --azul-principal: #0339A6;
+    --azul-secundario: #04328C;
+    --azul-oscuro: #0F1626;
+    --azul-gris: #264773;
+    --dorado: #F2A516;
+}
+
+.navbar {
+    background: var(--azul-secundario) !important;
+}
+
+.navbar a {
+    color: white !important;
+}
+
+.navbar a:hover {
+    color: var(--dorado) !important;
+}
+
+footer {
+    background: var(--azul-oscuro);
+    color: white;
+}
+
+.card {
+    border: none;
+    border-radius: 18px;
+    transition: .3s;
+}
+
+.card:hover {
+transform: translateY(-8px);
+box-shadow: 0 15px 30px rgba(0,0,0,.20);
+}
+
+h1 {
+    color: var(--azul-principal);
+    font-weight: bold;
+}
+
+.btn-primary {
+    background: var(--azul-principal);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: var(--azul-secundario);
+}
+
+.btn-danger:hover {
+    background: #1d2b48;
+}
+
+.btn-success {
+    background: var(--azul-gris);
+    border: none;
+}
+
+.btn-warning {
+    background: var(--dorado);
+    border: none;
+}
+
+thead {
+    background: var(--azul-oscuro);
+    color: white;
+}
+
+/* Estilos para la tabla de reportes */
+.reportes-table thead th {
+    background: white; /* aspecto sencillo */
+    color: #222;
+    border-bottom: 2px solid var(--azul-secundario);
+    text-align: left;
+}
+
+.reportes-table tbody td {
+    vertical-align: middle;
+}
+
+.reportes-table th, .reportes-table td {
+    padding: .9rem .75rem;
+}
+
+.acciones {
+    width: 120px;
+}
+
+.acciones .btn {
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.btn-warning {
+    background: var(--dorado);
+    color: #000;
+    border: none;
+}
+
+.btn-warning:hover {
+    background: #d69011;
+}
+
+.btn-danger {
+    background: #d9534f;
+    border: none;
+}
+
+.btn-danger:hover {
+    background: #c9302c;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+

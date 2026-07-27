@@ -1,0 +1,403 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+
+
+<style>
+
+    body {
+        background-color: #f4f7fb;
+    }
+
+
+    .titulo-principal {
+        color: #003366;
+        text-shadow: 1px 1px 2px #aaa;
+    }
+
+
+    .subtitulo {
+        color: #b8860b;
+    }
+
+
+    .card-menu {
+        border-radius: 15px;
+        border: none;
+        transition: transform 0.3s, box-shadow 0.3s;
+        overflow: hidden;
+    }
+
+
+    .card-menu:hover {
+        transform: translateY(-8px);
+        box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+    }
+
+
+    .card-header-color {
+        background-color: #003366;
+        height: 8px;
+    }
+
+
+    .btn-unah {
+        background-color: #003366;
+        color:white;
+        border-radius: 20px;
+        padding: 10px 25px;
+    }
+
+
+    .btn-unah:hover {
+        background-color:#0055a5;
+        color:white;
+    }
+
+
+    .btn-dorado {
+        background-color:#b8860b;
+        color:white;
+        border-radius:20px;
+    }
+
+
+    .btn-dorado:hover {
+        background-color:#d4a017;
+        color:white;
+    }
+
+
+</style>
+
+
+
+<div class="container mt-5">
+
+
+    <div class="text-center">
+
+
+        <h1 class="display-4 fw-bold titulo-principal">
+
+            Sistema de Reporte de Daños en Aulas
+
+        </h1>
+
+
+        <h3 class="subtitulo fw-bold">
+
+            UNAH Valle de Sula
+
+        </h3>
+
+
+        <hr />
+
+
+        <p class="lead">
+
+            Este sistema permite registrar y dar seguimiento a los daños
+            reportados en las aulas de la UNAH-VS, facilitando la comunicación
+            entre los usuarios y el personal encargado del mantenimiento.
+
+        </p>
+
+
+    </div>
+
+
+
+
+    <div class="row mt-5">
+
+
+        <!-- Registrar -->
+
+        <div class="col-md-6 col-lg-4 mb-4">
+
+
+            <div class="card shadow h-100 card-menu">
+
+                <div class="card-header-color"></div>
+
+
+                <div class="card-body text-center">
+
+
+                    <h4 class="text-primary fw-bold">
+
+                        Registrar Reporte
+
+                    </h4>
+
+
+                    <p>
+                        Registrar un nuevo daño detectado en un aula.
+                    </p>
+
+
+                    <a asp-controller="Reportes"
+                       asp-action="Crear"
+                       class="btn btn-unah">
+
+                        Registrar
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+        <!-- Reportes -->
+
+
+        <div class="col-md-6 col-lg-4 mb-4">
+
+
+            <div class="card shadow h-100 card-menu">
+
+
+                <div class="card-header-color"></div>
+
+
+                <div class="card-body text-center">
+
+
+                    @if (Context.Session.GetString("Rol") == "Administrador")
+                    {
+
+
+                        <h4 class="text-success fw-bold">
+
+                            Ver Reportes
+
+                        </h4>
+
+
+                        <p>
+                            Consultar todos los reportes registrados.
+                        </p>
+
+
+                        <a asp-controller="Reportes"
+                           asp-action="Index"
+                           class="btn btn-success rounded-pill px-4">
+
+
+                            Ver Reportes
+
+
+                        </a>
+
+
+                    }
+                    else
+                    {
+
+
+                        <h4 class="text-success fw-bold">
+
+                            Mis Reportes
+
+                        </h4>
+
+
+                        <p>
+                            Consultar los reportes realizados.
+                        </p>
+
+
+                        <a asp-controller="Reportes"
+                           asp-action="MisReportes"
+                           class="btn btn-success rounded-pill px-4">
+
+                            Mis Reportes
+
+                        </a>
+
+
+                    }
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+        <!-- Acerca -->
+
+
+        <div class="col-md-6 col-lg-4 mb-4">
+
+
+            <div class="card shadow h-100 card-menu">
+
+
+                <div class="card-header-color"></div>
+
+
+                <div class="card-body text-center">
+
+
+                    <h4 class="text-warning fw-bold">
+
+                        Investigación
+
+                    </h4>
+
+
+                    <p>
+                        Información sobre el problema y la solución propuesta.
+                    </p>
+
+
+                    <a asp-controller="Home"
+                       asp-action="AcercaDelSistema"
+                       class="btn btn-dorado">
+
+                        Acerca del Sistema
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+        @if (Context.Session.GetString("Rol") == "Administrador")
+        {
+
+
+            <!-- Administración -->
+
+
+            <div class="col-md-6 col-lg-4 mb-4">
+
+
+                <div class="card shadow h-100 card-menu">
+
+
+                    <div class="card-header-color"></div>
+
+
+                    <div class="card-body text-center">
+
+
+                        <h4 class="text-danger fw-bold">
+
+                            Administración
+
+                        </h4>
+
+
+                        <p>
+                            Gestionar estados de los reportes.
+                        </p>
+
+
+                        <a asp-controller="Administracion"
+                           asp-action="Index"
+                           class="btn btn-danger rounded-pill px-4">
+
+
+                            Administrar
+
+
+                        </a>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+            <!-- Dashboard -->
+
+
+            <div class="col-md-6 col-lg-4 mb-4">
+
+
+                <div class="card shadow h-100 card-menu">
+
+
+                    <div class="card-header-color"></div>
+
+
+                    <div class="card-body text-center">
+
+
+                        <h4 class="fw-bold text-dark">
+
+                            Dashboard
+
+                        </h4>
+
+
+                        <p>
+                            Conteo y estadísticas de reportes.
+                        </p>
+
+
+                        <a asp-controller="Administracion"
+                           asp-action="Dashboard"
+                           class="btn btn-dark rounded-pill px-4">
+
+
+                            Dashboard
+
+
+                        </a>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        }
+
+
+
+    </div>
+
+
+</div>

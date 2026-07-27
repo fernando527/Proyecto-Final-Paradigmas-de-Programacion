@@ -11,9 +11,12 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand">SDRD-UNAH</a>
+                <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+                    <img src="~/images/unah-logo.png" alt="UNAH" class="navbar-logo" onerror="this.style.display='none'" />
+                    SDRD-UNAH
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -26,7 +29,7 @@
                         {
 
                             <li class="nav-item">
-                                <a class="nav-link text-dark"
+                                <a class="nav-link"
                                        asp-controller="Home"
                                        asp-action="Index">
                                     Inicio
@@ -35,7 +38,7 @@
 
 
                             <li class="nav-item">
-                                <a class="nav-link text-dark"
+                                <a class="nav-link"
                                        asp-controller="Reportes"
                                        asp-action="Crear">
                                     Registrar Reporte
@@ -43,7 +46,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link text-dark"
+                                <a class="nav-link"
                                        asp-controller="Reportes"
                                        asp-action="MisReportes">
                                     Mis Reportes
@@ -54,7 +57,7 @@
 
 
                         <li class="nav-item">
-                            <a class="nav-link text-dark"
+                            <a class="nav-link"
                                    asp-controller="Home"
                                    asp-action="Acercadelsistema">
                                 Acerca del Sistema
@@ -71,9 +74,10 @@
                         @if (Context.Session.GetString("NombreUsuario") != null)
                         {
 
+
                             <li class="nav-item">
 
-                                <span class="nav-link text-dark">
+                                <span class="nav-link">
 
                                     Usuario:
                                     <strong>
@@ -126,9 +130,9 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer">
         <div class="container">
-            &copy; 2026 - SDRD-UNAH - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2026 - SDRD-UNAH - <a href="https://www.curseforge.com/members/adp_team/projects" target="_blank" rel="noopener noreferrer">ADP TEAM</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

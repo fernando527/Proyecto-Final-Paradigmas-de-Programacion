@@ -1,0 +1,78 @@
+﻿@model List<Proyecto_Final_Paradigmas_de_Programacion.Models.Reporte>
+
+<h2>Mis Reportes</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Usuario</th>
+            <th>Edificio</th>
+            <th>Aula</th>
+            <th>Daño</th>
+            <th>Descripción</th>
+            <th>Prioridad</th>
+            <th>Estado</th>
+            <th>Fecha</th>
+            <th>Urgente</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+
+
+
+    <tbody>
+        @{
+            int contador = 1;
+        }
+
+        @foreach (var reporte in Model)
+        {
+            <tr>
+                <td>@(contador++)</td>
+
+                <td>@reporte.NombreUsuario</td>
+
+                <td>@reporte.Edificio</td>
+
+                <td>@reporte.Aula</td>
+
+                <td>@reporte.NombreDanio</td>
+
+                <td>@reporte.Descripcion</td>
+
+                <td>@reporte.NombrePrioridad</td>
+
+                <td>@reporte.NombreEstado</td>
+
+                <td>@reporte.FechaReporte</td>
+
+                <td>
+                    @(reporte.EsUrgente ? "Sí" : "No")
+                </td>
+
+                <td>
+
+                    <a asp-controller="Reportes"
+                           asp-action="EditarFormulario"
+                           asp-route-id="@reporte.IdReporte"
+                           class="btn btn-warning">
+
+                        Editar
+
+                    </a>
+
+                    <a asp-action="Eliminar"
+                           asp-route-id="@reporte.IdReporte"
+                           class="btn btn-danger"
+                           onclick="return confirm('¿Está seguro que desea eliminar este reporte?');">
+                        Eliminar
+                    </a>
+
+                </td>
+            </tr>
+        }
+
+    </tbody>
+
+</table>
